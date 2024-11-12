@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+    <link rel="icon"href="favicon(1).ico"type="image/png">
+    <link rel="stylesheet"type="text/css"href="stylesheet.css">
+</head>
+<!-- <body style="background-image: url('https://www.patternpictures.com/wp-content/uploads/Kristal-subtle-glass-white-background-pattern-patternpictures-0220.png');background-repeat: no-repeat;background-size: 100%;"> -->
+    <body style="background-color: #DFD3C3;"> 
+    
+    <header>
+       <div>
+        <img src="tag.png"width="100%"height='500px'>
+        </div> </header><br><br>
+       <!--basic terminology-->
+       <section class="text">
+        <h1><u>FUNCTIONS</u></h1>
+      
+      <br>
+        A function is a block of code which only runs when it is called.
+        <br>
+You can pass data, known as parameters, into a function.
+<br>
+Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
+<br>
+<h1>Create a Function</h1>
+To create (often referred to as declare) your own function, specify the name of the function, followed by parentheses () and curly brackets {}: <br>
+
+Syntax <br>
+void myFunction() { <br>
+  // code to be executed <br>
+} <br>
+Example Explained <br>
+myFunction() is the name of the function <br>
+void means that the function does not have a return value.  <br>
+
+Call a Function <br>
+Declared functions are not executed immediately. <br> They are "saved for later use", and will be executed when they are called. <br>
+
+To call a function, write the function's name followed by two parentheses () and a semicolon ; <br>
+
+In the following example, myFunction() is used to print a text (the action), when it is called: <br>
+
+Example <br>
+Inside main, call myFunction():
+<br>
+// Create a function
+<br>void myFunction() {
+    <br> printf("I just got executed!");
+}
+<br>
+int main() {
+    <br>myFunction(); // call the function
+    <br>return 0;
+} <br>
+<br> <br> <br>
+// Outputs "I just got executed!" <br>
+A function can be called multiple times: <br>
+<br>
+Example <br>
+void myFunction() { <br>
+  printf("I just got executed!");
+  <br>}
+  <br>
+int main() { <br>
+  myFunction(); <br>
+  myFunction(); <br>
+  myFunction(); <br>
+  return 0; <br>
+} <br>
+
+// I just got executed! <br>
+// I just got executed! <br>
+// I just got executed! <br>
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Function-Prototype-in-c.png"height="700px">
+
+        <a href="https://www.javatpoint.com/functions-in-c">MORE ON FUNCTIONS</a><br>
+<br>
+
+    <h1><u>RECURSION</u></h1><br>
+    ecursion is the technique of making a function call itself. <br>This technique provides a way to break complicated problems down into simple problems which are easier to solve.<br>
+
+    Recursion may be a bit difficult to understand. The best way to figure out how it works is to experiment with it.<br>
+    
+    Recursion Example<br>
+    Adding two numbers together is easy to do, but adding a range of numbers is more complicated. <br>In the following example, recursion is used to add a range of numbers together by breaking it down into the simple task of adding two numbers:<br>
+    
+    Example<br>
+    int sum(int k);<br>
+    
+    int main() {<br>
+      int result = sum(10);<br>
+      printf("%d", result);<br>
+      return 0;<br>
+    }<br>
+    
+    int sum(int k) {<br>
+      if (k > 0) {<br>
+        return k + sum(k - 1);<br>
+      } else {<br>
+        return 0;<br>
+      }<br>
+    }<br>
+    Example Explained<br>
+    When the sum() function is called, it adds parameter k to the sum of all numbers smaller than k and returns the result.<br> When k becomes 0, the function just returns 0. When running, the program follows these steps:
+    <br>
+    10 + sum(9)<br>
+    10 + ( 9 + sum(8) )<br>
+    10 + ( 9 + ( 8 + sum(7) ) )<br>
+    ...
+    10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + sum(0)<br>
+    10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0<br>
+    Since the function does not call itself when k is 0, the program stops there and returns the result.<br>
+    
+    The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. <br>However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.<br>
+    <img src="https://cdn.programiz.com/sites/tutorial2program/files/how-recursion-works-c_0.jpg"height="700px">
+
+    <a href="https://www.google.com/search?q=recursion+in+c&oq=RECURSION+IN+C&aqs=chrome.0.0i67i131i433j0i67l3j0i512l6.4180j0j4&sourceid=chrome&ie=UTF-8">MORE ON RECURSION</a>
+    <BR>
+        </section>
+</body></html>

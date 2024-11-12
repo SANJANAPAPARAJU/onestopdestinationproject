@@ -1,0 +1,447 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+    <link rel="icon"href="favicon(1).ico"type="image/png">
+    <link rel="stylesheet"type="text/css"href="stylesheet.css">
+</head>
+<body style="background-image: url('https://www.patternpictures.com/wp-content/uploads/Kristal-subtle-glass-white-background-pattern-patternpictures-0220.png');background-repeat: no-repeat;background-size: 100%;">
+    
+    <header>
+       <div>
+        <img src="tag.png"width="100%"height='500px'>
+        </div> </header><br><br>
+        <div class="interheading"><h1> M-1</h1></div></header>
+        <h1 class="heading"><u>CONTENTS</u></h1><br>
+        <div class="text">
+           <div class="text"><a href="#ml" style="text-decoration: none;">
+        1.MATRICES AND LINEAR SYSTEM OF EQUATIONS</a></div><BR>
+           <div class="text"><a href="#ev" style="text-decoration: none;">2.EIGEN VALUES AND EIGEN VECTORS</a></div><BR>
+           <div class="text"><a href="#s" style="text-decoration: none;">3.SEQUENCE</a></div><BR>
+               <div class="text"><a href="#bgf" style="text-decoration: none;">4.BETA AND GAMMA FUNCTIONS</a></div><BR>
+                   <div class="text"><a href="#mc" style="text-decoration: none;">5.MULTI VARIABLE CALCULUS</a></div><BR>
+                           </div>
+                               <div class="text" style="background-color: #FAD9A1;">
+                                <u id="ml">1.MATRICES AND LINEAR SYSTEM OF EQUATIONS </u><br>
+                                
+                               <b> What are the application of matrices in engineering?</b><br>
+                                The numbers in a matrix can represent data, and they can also represent mathematical equations. In many time-sensitive engineering applications, multiplying matrices can give quick but good approximations of much more complicated calculations.
+                                <br>
+                               <b> What are applications of matrices in the real world?</b><br>
+                                Physics: Matrices are applied in the study of electrical circuits, quantum mechanics, and optics. It helps in the calculation of battery power outputs, resistor conversion of electrical energy into another useful energy. Therefore, matrices play a major role in calculations.
+                                <br><b>
+                                How are matrices important to technological application?</b><br>
+                                
+                                They are used as a way of providing quick approximations of more complicated calculations. They were originally devised as a way of describing systems of linear equations. In applications such as image processing and genetic analysis, computers may multiply matrices in order to solve systems of linear equations.
+                                <br><b>
+                                What are the applications of matrices and determinants?</b><br>
+                                One application of matrix and determinant is that it can be used to solve linear equations in two or three variables. Matrices and determinants are also used to check the consistency of any system, whether they are consistent or not.
+                                <br>
+                               <b> How matrices are used in robotics?</b><br>
+                                The movements of the robotic arm can be described using orthogonal matrices. The first segment is fixed to the wall but is free to rotate. The motion of the 2nd segment is confined to a plane; however, combining it with the rotation of the 1st segment allows it to move in the right half-space.
+                                <br><b>
+                                Why are matrices used?</b><br>
+                                
+                                Matrices can be used to compactly write and work with multiple linear equations, that is, a system of linear equations. Matrices and matrix multiplication reveal their essential features when related to linear transformations, also known as linear maps.
+                                <br>
+                                <b>
+                                What are the applications of determinant?</b><br>
+                            
+                                
+                                Use determinants to determine whether a matrix has an inverse, and evaluate the inverse using cofactors.
+                                Apply Cramer’s Rule to solve a 2×2 or a 3×3 linear system.
+                                Given data points, find an appropriate interpolating polynomial and use it to estimate points.
+                                How are matrices used in robotics and automation?
+                                In robotics, Homogeneous Transformation Matrices (HTM) have been used as a tool for describing both the position and orientation of an object and, in particular, of a robot or a robot component [1].
+                                <br><b>
+                                How matrices are used in computer graphics?</b><br>
+                                
+                                Introduction. The usefulness of a matrix in computer graphics is its ability to convert geometric data into different coordinate systems. In simple terms, the elements of a matrix are coefficients that represents the scale or rotation a vector will undergo during a transformation.
+                                <br>
+                               <b> What is the use of matrix in data science explain with the help of code?</b><br>
+                                Matrix is a way of writing similar things together to handle and manipulate them as per our requirements easily. In Data Science, it is generally used to store information like weights in an Artificial Neural Network while training various algorithms. You will be able to understand my point by the end of this article.
+                                <br>
+                                <b>Why are Matrics used in engineering in real life?</b><br>
+                                In real life, engineers use matrices to solve systems with hundreds of equations. In some solvers, you can’t write the equations and wait for the computer to solve them for you. Instead, you have to convert them to matrices. This is just one example why matrices are important in engineering. Originally Answered: Why are matrics used in engineering?
+                                <br>
+                               
+                               <b> How are matrices used in science and commerce?</b><br>
+                                Matrices are used in science of optics to account for reflection and for refraction. Matrices are also useful in electrical circuits and quantum mechanics and resistor conversion of electrical energy. Matrices are used to solve AC network equations in electric circuits.
+                                <br>
+                             <b>   How are matrices used in the real world?</b><br>
+                                Matrices are used to solve AC network equations in electric circuits. Application of matrices in mathematics have an extended history of application in solving linear equations. Matrices are incredibly useful things that happen in many various applied areas.<br>
+
+<img src="https://www.flexiprep.com/NCERT-Exercise-Solutions/Mathematics/Class-12/posts/Ch-3-Matrices-Part-16/Matrix-Properties.png"height="700px">
+<img src="https://i.ytimg.com/vi/Kbv7rw6sUBo/maxresdefault.jpg"height="700px">
+<br><a href="https://www.geeksforgeeks.org/last-minute-notes-engineering-mathematics/">more on matrices and linear system of equations</a><br><br></div>
+
+
+<div class="text" style="background-color: #E2C2B9;">
+<u id="ev">2.EIGEN VALUES AND EIGEN VECTORS </u><br>
+
+
+Eigenvalues are associated with eigenvectors in Linear algebra. Both terms are used in the analysis of linear transformations. Eigenvalues are the special set of scalar values that is associated with the set of linear equations most probably in the matrix equations. The eigenvectors are also termed as characteristic roots. It is a non-zero vector that can be changed at most by its scalar factor after the application of linear transformations. And the corresponding factor which scales the eigenvectors is called an eigenvalue.
+<br>
+<img src="https://miro.medium.com/max/3326/1*TdPrjB0rpALnR210BWqcjQ@2x.jpeg"height="700px">
+<img src="https://i.ytimg.com/vi/mC2xQnI9SCI/hqdefault.jpg"height="700px">
+<br>
+<a href="https://www.geeksforgeeks.org/applications-of-eigenvalues-and-eigenvectors/#:~:text=Eigenvalue%3A%20The%20specific%20set%20of%20scalars%20connected%20with,The%20German%20term%20%E2%80%98Eigen%E2%80%99%20denotes%20%E2%80%98appropriate%E2%80%99%20or%20%E2%80%98characteristic.%E2%80%99">more on eigen values and eigen vectors</a><br><br></div>
+
+
+<div class="text" style="background-color: #BFD8B8;">
+    <u id="s">3.SEQUENCE</u><br>
+    We can define a sequence as an arrangement of numbers in some definite order according to some rule.<br>
+This mathematical representation of such patterns is studied under sequence and series.<br>
+Any pattern when laid out in numbers and separated by commas is known as a sequence.
+<br>
+We can commonly represent sequences as x1,x2,x3,......xn, where 1,2,3 are the positions of the numbers and n is the nth term. 
+<br>
+Whereas, series is defined as the sum of sequences, which means that if we add up the numbers of the sequence, then we get a series.<br>
+Example: 1+2+3+4+.....+n, where n is the nth term. 
+<br>
+Suppose we have to find the sum of the arithmetic series 1,2,3,4 ...100. We have to just put the values in the formula for the series.
+<br>
+ Sequences and series are immensely useful when trying to do predictive or projective calculations. One simple example is score prediction, required run rate, projected score, etc. while watching a cricket match. All of these calculations are similar to studying numeric patterns and extending them or summing them up to visualise a future score, which is some steps further in the extension of the sequence that was observed from past scores.<br>
+<b>Types of Sequence</b><br>
+There are mainly three types of sequences:
+<br>
+Arithmetic Sequences<br>
+
+Geometric Sequence<br>
+
+Fibonacci Sequence<br>
+
+ 
+
+<b>Arithmetic Sequence</b><br>
+Any sequence in which the difference between every successive term is constant is called Arithmetic Sequences. <br>
+
+ 
+
+This means that as we go further up in the sequence, the numbers keep increasing by an arbitrary constant value. And if we need to generate the next number, we simply add this arbitrary constant value again to the last number of the sequence and get a new number to extend the sequence.<br>
+
+ 
+
+Example:<br>
+
+3,  6,  9,  12, 15,  18, 21……..
+
+ <br>
+
+  +3 +3  +3  +3  +3  +3
+
+ <br>
+
+Here, the difference between the two successive terms is 3. So, it is called the difference.
+
+ <br>
+
+When we have to get the next number of this sequence, we simply add 3 to the last number of this sequence.
+
+ <br>
+
+The difference is represented by “d”.
+
+ 
+<br>
+In the above example, we can see that a1 =3 and a2 = 6.
+<br>
+ 
+
+The difference between the two successive terms is
+<br>
+a2 &minus; a1 = 3<br>
+
+a3 &minus; a2 = 3<br>
+
+ 
+
+In an arithmetic sequence, if the first term is a1 and the common difference is d, then the nth term of the sequence is given by:<br>
+
+ 
+
+an=a1+(n&minus;1)d<br>
+
+ 
+
+Using the above formula, we can successfully determine any number of any given arithmetic sequence.
+<br>
+ 
+
+<b>Geometric Sequences</b><br>
+A sequence in which every successive term has a constant ratio between them is called Geometric Sequence. <br>
+
+ 
+
+Constant ratio means that between every two numbers of the geometric sequence, there is an arbitrary constant, which is multiplied by the last number of the sequence to obtain the next number.<br>
+
+ 
+
+Example:<br>
+
+1, 4, 16, 64…<br>
+
+ 
+
+Here,<br>
+
+a1 =1
+<br>
+a2 = 4 = a1(4)
+<br>
+a3 = 16 = a2(4)
+<br>
+ 
+
+Here, we are multiplying it by 4 every time to get the next term. The ratio here is 4.
+<br>
+ 
+
+The ratio is denoted by “r”.
+<br>
+an = an-1⋅r or 
+<br>
+ 
+
+an = a1⋅rn&minus;1
+<br>
+ 
+
+an=an&minus;1&times;r
+<br>
+ 
+
+Using the above formula, we can determine any number of any given geometric sequence.
+
+<br>
+
+<b>Fibonacci Sequence</b>
+<br>By adding the value of the two terms before the required term, we will get the next term. Such a type of sequence is called the Fibonacci sequence. There is no visible pattern.
+
+<br>
+
+The Fibonacci sequence is named after Leonardo Fibonacci, a famous Italian mathematician. 
+<br>
+ 
+
+The Fibonacci sequence is very famous because it is the same pattern that is found in many natural wonders such as petals of flowers, shapes of eggs, etc. This sequence is also used to determine the golden ratio, which is a very important component in design and photography. The golden ratio is the ratio between any two numbers of the Fibonacci sequence. The rule of thirds in photography and graphic design is inspired by the golden ratio. 
+
+<br>
+
+Example:
+<br>
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 54, 88, 142  …
+
+<br>
+
+In the above sequence, we can see
+<br>
+a1 =0, a2 = 1<br>
+
+a3 = a2 + a1 = 0 + 1 =1<br>
+
+a4 = a3 + a2  = 1 + 1 =2, and so on.<br>
+
+ 
+
+So, the Fibonacci Sequence formula is<br>
+
+an = an-2 + an-1, n > 2<br>
+
+ 
+
+This is also called the Recursive Formula. Using this formula, we can calculate any number of the Fibonacci sequence.<br>
+
+ 
+
+Series<br>
+The summation of all the numbers of the sequence is called series. Generally, it is written as Sn.
+<br>
+ 
+
+Example:<br>
+
+If we have a sequence 1, 4, 7, 10, …
+<br>
+ 
+
+Then the series of this sequence is 1 + 4 + 7 + 10 +…<br>
+
+ 
+
+The Greek symbol sigma “Σ” is used for the series, which means “sum up”.
+<br>
+ 
+ 
+
+The series 4 + 8 + 12 + 16 + 20 + 24 can be expressed as ∑i=164n<br>
+
+ 
+
+We read this expression as the sum of 4n as n ranges from 1 to 6. <br>
+
+
+For any sequence, its series can be calculated by summing up its numbers.
+<br>
+
+Types of Series
+Having seen the types of sequences, let us move on to the types of series. <br>
+
+
+There are different types of series:
+<br>
+ 
+
+Arithmetic Series<br>
+If the sequence that we are calculating the series for is an arithmetic <br>
+
+ 
+
+An arithmetic series is the sum of a sequence ai, i = 1, 2,....n, in which each term is computed from the previous one by adding or subtracting a constant d. <br>
+
+ 
+
+If we are subtracting a constant, then it means that the common difference is a negative number.
+<br>
+ 
+
+Therefore, for i>1 
+<br>
+ 
+
+ai = ai-1 + d = ai-2 + d=............... =a1 + d(i-1),
+
+<br>
+
+where a is the first term and d is the difference between the terms, which is known as the common difference of the given series.
+
+<br>
+
+The Formula of Arithmetic Series<br>
+
+The formula for the nth term is given by an = a + (n - 1) d, where a is the first term, d is the difference, and n is the total number of the terms.
+
+<br>
+
+Let us now calculate the sum to n terms in an arithmetic series. The formula for the calculation is given below.
+
+ 
+<br>
+Sum of an Arithmetic Series<br>
+
+ 
+
+Sn=n22a+(n&minus;1)d
+<br>
+ 
+
+Using the above formula, sum to the nth term can be found.
+<br>
+ 
+
+Geometric Series<br>
+Geometric series is the sum of all the terms of the geometric sequences, i.e., if the ratio between every term to its preceding term is always constant, then it is said to be a geometric series.
+<br>
+ 
+
+Therefore, when a geometric sequence is summed up, it is known as a geometric series.
+
+ 
+<br>
+We can calculate the sum to n terms of a geometric sequence using the below formula.
+<br>
+ 
+
+The Formula of Geometric Series<br>
+
+In general, we can define geometric series as
+<br>
+ 
+
+∑n=1∞arn=a+ar+ar2+ar3+........arn
+<br>
+ 
+
+Where a is the first term and r is the common ratio for the geometric series.
+<br>
+ 
+
+an = a1 r n - 1 
+<br>
+ 
+
+Then the formula for the nth term is:
+
+<br>
+
+Sum of Geometric Series<br>
+
+Sn=a(1&minus;rn)1&minus;r
+
+<br>
+
+Geometric Progression (G.P.)<br>
+The sequence of numbers in which the next term of the sequence is obtained by multiplying or dividing the preceding number by the constant number is called a geometric progression. The constant number is called the common ratio. It is also known as Geometric Sequence.
+<br>
+ 
+
+a, ar, ar2, ar3, …, arn
+<br>
+ 
+
+In a geometric sequence, if the next number is obtained by dividing the previous number by a constant, then the common ratio is an inverse. 
+<br>
+ 
+   <img src="https://s3-ap-southeast-1.amazonaws.com/subscriber.images/maths/2016/01/24092011/Sequences-And-Series.jpg"height="700px">
+    <img src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/sequence-and-series-1623302119.png"height="700px">
+    <br>
+    <a href="https://www.geeksforgeeks.org/sequences-and-series/">more about sequences and series</a>     </div>
+    
+    
+    <div class="text" style="background-color: #C2F784">
+        <u id="bgf">4.BETA AND GAMMA FUNCTIONS </u><br>
+        Beta and gamma functions are popular functions in mathematics. Gamma is a single variable function while beta is a dual variable function. Beta function is used for computing and representing scattering amplitude for Regge trajectories. Also, it is applied in calculus using related gamma functions. Gamma function is like a factorial for natural numbers, its extension to positive real numbers makes it useful for modeling situations with continuous change, differential equations, complex analysis, and statistics.
+
+<br>
+Gamma function is a commonly used extension of the factorial function to complex numbers. It is defined for all complex numbers except non-positive integers.<br>
+
+For complex numbers with a positive real part, the gamma function is defined via a convergent improper integral:
+<br>
+Where Re(z) > 0
+<br>
+Since the gamma function has no zeros, the reciprocal gamma function is an entire function.
+<br>
+While other extensions of the factorial function do exist, the gamma function is the most popular. It has various applications in the fields of probability and statistics, as well as combinatorics.
+<br>
+
+<img src="https://i.ytimg.com/vi/WB8AwPFfZRQ/maxresdefault.jpg"height="700px">
+<br>
+<a href="https://www.geeksforgeeks.org/beta-function/">more on beta gamma functions</a>
+     
+               <br><br></div>
+
+               <div class="text" style="background-color: #BCFFB9;">
+                <u id="mc">5.MULTI VARIABLE CALCULUS</u><br>
+                What is Multivariable Calculus?<br>
+Multivariable Calculus deals with the functions of multiple variables, whereas single variable calculus deals with the function of one variable. <br>The differentiation and integration process are similar to the single variable calculus. <br>In multivariable calculus, to find a partial derivative, first, take the derivative of the appropriate variable while holding the other variables as constant.<br> It majorly deals with three-dimensional objects or higher dimensions. <br>The typical operations involved in the multivariable calculus are:
+
+Limits and Continuity<br>
+Partial Differentiation<br>
+Multiple Integration<br>
+Multivariable Calculus provides a tool for dynamic systems.<br>
+It is used in a continuous-time dynamic system for optimal control.<br>
+In regression analysis, it helps to derive the formulas to estimate the relationship among the set of empirical data.<br>
+In Engineering and Social Science, it helps to study and model the high dimensional systems that exhibit the deterministic nature.<br>
+In Finance, Quantitative Analyst uses multivariable calculus to predict future trends in the stock market.<br>
+
+<br>
+<!-- <img src=""height="700px"> -->
+<!-- <img src=""height="700px"> -->
+<a href="https://www.khanacademy.org/math/multivariable-calculus/">more on multi variable calculus</a><br><br></div>
+               
+</div>
+
+
+    </body></html>

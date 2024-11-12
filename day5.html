@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+    <link rel="icon"href="favicon(1).ico"type="image/png">
+    <link rel="stylesheet"type="text/css"href="stylesheet.css">
+</head>
+<!-- <body style="background-image: url('https://www.patternpictures.com/wp-content/uploads/Kristal-subtle-glass-white-background-pattern-patternpictures-0220.png');background-repeat: no-repeat;background-size: 100%;"> -->
+    <body style="background-color: #DFD3C3;"> 
+    
+    <header>
+       <div>
+        <img src="tag.png"width="100%"height='500px'>
+        </div> </header><br><br>
+       <!--basic terminology-->
+       <section class="text">
+        <h1><u>STRUCTURES</u></h1><br>
+        Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.<br>
+
+        Unlike an array, a structure can contain many different data types (int, float, char, etc.).<br>
+        In C, there are cases where we need to store multiple attributes of an entity. It is not necessary that an entity has all the information of one type only. <br>It can have different attributes of different data types.<br> For example, an entity Student may have its name (string), roll number (int), marks (float).<br> To store such type of information regarding an entity student, we have the following approaches:<br>
+
+Construct individual arrays for storing names, roll numbers, and marks.<br>
+Use a special data structure to store the collection of different data types.<br>
+To create a structure in C, the struct keyword is used followed by the tag name of the structure. Then the body of the structure is defined, in which the required data members (primitive or user-defined data types) are added.<br>
+If we have created a Student structure for storing data of students with all the data members like student name, student class and student section, how can we use them? <br>To use the properties of the created structure in C, we have to create structure variables. There are two ways to declare variables for structure in C language:<br>
+If we declare the structure variables with the structure definition, they work as global variables(means they can be accessed in the whole program).<br> If we need global variables we can declare variables with the structure otherwise declaring it using the second approach is the best way as it is easy to maintain or initialize variables.<br>
+
+How to Initialize Structure Members?<br>
+Initializing a structure member means assigning values to the structure members according to their respective data types. <br>But declaration doesn't allocate memory for the structure. <br>When we declare a variable for a structure, only then is the memory allocated to that structure variable. <br>Hence, assigning value to something that doesn't have memory is the same as serving food without a plate, which isn't a good idea! In short, structure members cannot be initialized during declaration.<br>
+<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Structure_in_C_1.png"height="700px">
+    <a href="https://www.javatpoint.com/structure-in-c">MORE ON STRUCTURES</a>
+    <BR>
+        </section>
+</body></html>

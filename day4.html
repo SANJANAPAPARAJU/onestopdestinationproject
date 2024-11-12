@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning</title>
+    <link rel="icon"href="favicon(1).ico"type="image/png">
+    <link rel="stylesheet"type="text/css"href="stylesheet.css">
+</head>
+<!-- <body style="background-image: url('https://www.patternpictures.com/wp-content/uploads/Kristal-subtle-glass-white-background-pattern-patternpictures-0220.png');background-repeat: no-repeat;background-size: 100%;"> -->
+    <body style="background-color: #DFD3C3;"> 
+    
+    <header>
+       <div>
+        <img src="tag.png"width="100%"height='500px'>
+        </div> </header><br><br>
+       <!--basic terminology-->
+       <section class="text">
+        <h1><u>ARRAYS</u></h1>
+      <br>
+        Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.<br>
+
+        Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables.<br> A specific element in an array is accessed by an index.
+        <br>
+        All arrays consist of contiguous memory locations. <br>The lowest address corresponds to the first element and the highest address to the last element.<br>
+        
+      
+        Declaring Arrays<br>
+        To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows <br>
+        
+        type arrayName [ arraySize ];<br>
+        This is called a single-dimensional array.<br> The arraySize must be an integer constant greater than zero and type can be any valid C data type.<br> For example, to declare a 10-element array called balance of type double, use this statement <br>
+        
+        double balance[10];<br>
+        Here balance is a variable array which is sufficient to hold up to 10 double numbers.<br>
+        
+        Initializing Arrays<br>
+        You can initialize an array in C either one by one or using a single statement as follows <br>
+        
+        double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};<br>
+        The number of values between braces { } cannot be larger than the number of elements that we declare for the array between square brackets [ ].<br>
+        
+        If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write <br>
+        
+        double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};<br>
+        You will create exactly the same array as you did in the previous example. Following is an example to assign a single element of the array −
+        <br>
+        balance[4] = 50.0;<br>
+        The above statement assigns the 5th element in the array with a value of 50.0. All arrays have 0 as the index of their first element which is also called the base index and the last index of an array will be total size of the array minus 1. Shown below is the pictorial representation of the array we discussed above <br>
+        
+        Array Presentation<br>
+        Accessing Array Elements<br>
+        An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. For example <br>
+        
+        double salary = balance[9];<br>
+        The above statement will take the 10th element from the array and assign the value to salary variable. The following example Shows how to use all the three above mentioned concepts viz. declaration, assignment, and accessing arrays <br>
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220728175227/Need-for-array.png"height="700px">
+        
+        <a href="https://www.w3schools.com/c/c_arrays.php">MORE ON ARRAYS</a><br>
+<br>
+
+    <h1><u>STRINGS</u></h1><br>
+    
+    
+    String in C programming is a sequence of characters terminated with a null character ‘\0’. Strings are defined as an array of characters. The difference between a character array and a string is the string is terminated with a unique character &quot;\0&quot;.<br>
+    Declaring a string is as simple as declaring a one-dimensional array. Below is the basic syntax for declaring a string.<br>
+
+char str_name[size];<br>
+In the above syntax str_name is any name given to the string variable and size is used to define the length of the string, i.e the number of characters strings will store. <br>
+Note: There is an extra terminating character which is the Null character (&quot;\0&quot;) used to indicate the termination of a string that differs strings from normal character arrays.<br> When a Sequence of characters enclosed in the double quotation marks is encountered by the compiler, a null character &quot;\0&quot;is appended at the end of the string by default.<br>
+
+<img src="https://www.tutorialspoint.com/cprogramming/images/string_representation.jpg"height="700px">
+    <a href="https://www.javatpoint.com/c-strings">MORE ON STRINGS</a>
+    <BR>
+        </section>
+</body></html>
